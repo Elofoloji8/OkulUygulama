@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/arkaplan"
+    tools:context=".MainActivity3">
+
+    <ScrollView
+        android:layout_width="410dp"
+        android:layout_height="660dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="101dp"
+                android:layout_height="95dp"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:onClick="don"
+                app:srcCompat="@drawable/geritusu"
+                android:contentDescription="geri tusu"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_weight="1" />
+
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#03A9F4"
+                android:onClick="openLink6"
+                android:gravity="center_horizontal"
+                android:text="Başvuru Dilekçesi" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#03A9F4"
+                android:onClick="openLink7"
+                android:gravity="center_horizontal"
+                android:text="Aday Mühendis Talep Formu" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#03A9F4"
+                android:onClick="openLink8"
+                android:gravity="center_horizontal"
+                android:text="İşyeri Eğitimi Protokolü" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#03A9F4"
+                android:onClick="openLink9"
+                android:gravity="center_horizontal"
+                android:text="İşyeri Eğitimi Yönergesi" />
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Başvuru:"
+                android:textColor="#FF0000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editTextText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="ad-soyad"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textSize="20sp"
+                android:textColor="#000000" />
+
+
+
+            <EditText
+                android:id="@+id/editTextNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="proje kodu"
+                android:inputType="number"
+                android:padding="16dp"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/editTextTextEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="e-posta"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="316dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#8E7C7B"
+                android:gravity="center_horizontal"
+                android:onClick="basvurui"
+                android:padding="16dp"
+                android:text="Başvuruyu gönder" />
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="1dp"
+                android:padding="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:listitem="@android:layout/simple_list_item_1" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

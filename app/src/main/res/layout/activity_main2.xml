@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/arkaplan"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity2">
+
+
+
+    <!-- Ana arkaplan -->
+
+    <ScrollView
+        android:layout_width="405dp"
+        android:layout_height="782dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="101dp"
+                android:layout_height="95dp"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:contentDescription="geri tusu"
+                android:onClick="geri"
+                app:srcCompat="@drawable/geritusu" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#03A9F4"
+                android:gravity="center_horizontal"
+                android:onClick="openLink1"
+                android:text="Staj Uygulama Kuralları" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#03A9F4"
+                android:gravity="center_horizontal"
+                android:onClick="openLink2"
+                android:text="Staj Formu" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#03A9F4"
+                android:gravity="center_horizontal"
+                android:onClick="openLink3"
+                android:text="Staj I Başvuru Dilekçesi" />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#03A9F4"
+                android:gravity="center_horizontal"
+                android:onClick="openLink4"
+                android:text="Staj II Başvuru Dilekçesi" />
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#03A9F4"
+                android:gravity="center_horizontal"
+                android:onClick="openLink5"
+                android:text="Öğrenci Ve İş Veren Bilgi Formu" />
+
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Başvuru:"
+                android:textColor="#FF0000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editTextText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#000000"
+                android:ems="10"
+                android:hint="ad-soyad"
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editTextNumber2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="okul no "
+                android:inputType="number"
+                android:padding="16dp"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editTextTextEmailAddress2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="e-posta"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="316dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#8E7C7B"
+                android:gravity="center_horizontal"
+                android:onClick="basvurus"
+                android:padding="16dp"
+                android:text="Başvuruyu gönder" />
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="462dp"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="1dp"
+                android:padding="16dp"
+                tools:listitem="@android:layout/simple_list_item_1" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
